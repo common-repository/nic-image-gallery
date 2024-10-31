@@ -1,0 +1,411 @@
+/* Portolio Hover */
+.da-thumbs li ,
+.da-thumbs li  img {
+	display: block;
+	position: relative;
+	margin:0px;
+	border-radius:0px;
+	box-shadow:0px;
+	
+}
+.da-thumbs li  {
+	overflow: hidden;
+}
+.da-thumbs li  article {
+	position: absolute;
+	/*background-image:url(../images/image_hover.png); */
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.da-thumbs li  article.da-animate {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+/* Initial state classes: */
+.da-slideFromTop {
+	left: 0px;
+	top: -100%;
+}
+.da-slideFromBottom {
+	left: 0px;
+	top: 100%;
+}
+.da-slideFromLeft {
+	top: 0px; 
+	left: -100%;
+}
+.da-slideFromRight {
+	top: 0px;
+	left: 100%;
+}
+/* Final state classes: */
+.da-slideTop {
+	top: 0px;
+}
+.da-slideLeft {
+	left: 0px;
+}
+.da-thumbs li  article a {
+	color: #FFFFFF;
+    display: block;
+    font-size: 26px;
+    line-height: 24px;
+    text-decoration: underline;
+    font-family: Tahoma;
+    font-style: normal;
+    text-decoration: none;
+    
+}
+.da-thumbs li  article h2 a 
+{
+	font-family: 'Trebuchet MS';
+    font-size: 14px;
+    font-style: normal;
+    line-height: 26px;
+    padding: 0 5px 0 0;
+    text-decoration: none;
+}
+.da-thumbs {
+text-align:center;
+}
+
+.da-thumbs li  article h3{
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    margin: 0;
+    
+    padding: 7px 0;
+
+}
+
+
+
+.da-thumbs li  article em{
+margin-bottom:10px;
+color:#fff;
+display:block;
+}
+
+.da-thumbs li  article span{
+display:inline-block;
+}
+
+span.link_post{
+display:block;
+width:35px;
+height:35px;
+background-color:#DF6232;
+border-radius:50px;
+cursor:pointer;
+background-image:url(../images/link_post_icon.png);
+background-repeat:no-repeat;
+background-position:center;
+margin-right:10px;
+}
+
+span.zoom{
+overflow:hidden;
+display:block;
+width:35px;
+height:35px;
+background-color:#DF6232;
+border-radius:50px;
+cursor:pointer;
+background-image:url(../images/zoom_icon.png);
+background-repeat:no-repeat;
+background-position:center;
+margin-left:10px;
+}
+
+.portfolio_2col article h3{
+	/* padding-top:70px !important; */
+}
+
+/* Image Grid */
+.image_grid {
+	float:left;
+	overflow:hidden;
+	position:relative;
+	margin-top:20px;
+	}
+
+.image_grid li{
+	float: left;
+	line-height: 17px;
+	color: #686f74;
+	list-style:none;
+	overflow:hidden;	
+	text-align:center;
+	height:220px;
+	width:220px;
+}
+
+
+/* Responsive image grid*/
+/* Mobile landscape width 320 */
+@media only screen and (max-width: 767px) {
+
+.image_grid{
+/*width:300px; */
+}
+
+.image_grid li img{
+/*width:220px;*/
+}
+
+.portfolio_4col .da-thumbs li article h3, .portfolio_4col .da-thumbs li article h2{
+padding-top:70px;
+}
+
+.portfolio_3col .da-thumbs li article h3, .portfolio_3col .da-thumbs li article h2{
+padding-top:50px;
+}
+
+.portfolio_2col .da-thumbs li article h3, .portfolio_2col .da-thumbs li article h2{
+padding-top:53px !important;
+}
+
+}
+
+
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.image_grid{
+/*width:450px;*/
+}
+
+.image_grid li{
+/*width:178px !important; */
+}
+
+.portfolio_4col .da-thumbs li article h3, .portfolio_4col .da-thumbs li article h2{
+padding-top:58px;
+}
+
+.portfolio_3col .da-thumbs li article h3, .portfolio_3col .da-thumbs li article h2{
+padding-top:34px;
+}
+
+.portfolio_2col .da-thumbs li article h3, .portfolio_2col .da-thumbs li article h2{
+padding-top:23px !important;
+}
+
+}
+.gridsquare_img{
+float:left;
+width:50%;
+}
+
+.image_title{}
+
+
+
+
+#gridView {
+    -moz-user-select: -moz-none;
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+#gridView div.infoElOver {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #EF4A4A;
+    font-size: 15px;
+    font-weight: 600;
+    height: 0;
+    left: 50%;
+    line-height: 20px;
+    margin-left: -160px;
+    overflow: hidden;
+    padding: 0 50px;
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    width: 220px;
+}
+#gridView div.infoElOver p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 40px 0 0;
+    text-transform: uppercase;
+}
+#gridView div.infoElOver span {
+    color: #343537;
+    font-size: 15px;
+    margin-top: 20px;
+}
+#gridView div.infoElOver span:before {
+    background-position: -11px -21px;
+    margin-top: -2px;
+}
+#gridView a {
+    display: block;
+}
+#gridView ul {
+    display: block;
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+#gridView li {
+    display: block;
+    float: left;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.1s ease-in 0s;
+    width: 160px;
+}
+#gridView li a {
+    display: block;
+}
+#gridView li img, #gridView li span.img {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+#gridView li span.img {
+    float: left;
+}
+#gridView li img {
+    display: none;
+}
+#gridView li > div {
+    background: none repeat scroll 0 0 #EF4A4A;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+    height: 160px;
+    left: -100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 160px;
+    z-index: 5;
+}
+#gridView li > a.mobile {
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#gridView li > a.mobile > span {
+    background: none repeat scroll 0 0 #EF4A4A;
+    bottom: 0;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+#gridView li:hover div {
+    left: 0;
+}
+#gridView li div h3 {
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+}
+#gridView li div h3 span {
+    color: #FFFFFF;
+    display: block;
+    font-family: "adobe-caslon-pro";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#gridView li div a {
+    bottom: 30px;
+    display: block;
+    position: absolute;
+    right: 40px;
+}
+#gridView li div.animate {
+    transition: all 0.3s ease-in-out 0s;
+}
+#gridView li div.slideFromTop {
+    left: 0;
+    top: -100%;
+}
+#gridView li div.slideFromBottom {
+    left: 0;
+    top: 100%;
+}
+#gridView li div.slideFromLeft {
+    left: -100%;
+    top: 0;
+}
+#gridView li div.slideFromRight {
+    left: 100%;
+    top: 0;
+}
+#gridView li div.slideTop {
+    top: 0;
+}
+#gridView li div.slideLeft {
+    left: 0;
+}
+
+
+
+h2#more_detail {     
+	background: none repeat scroll 0 0 #AD0B0B;
+    height: 32px;
+    right: 0;
+    padding: 5px 10px 0;
+    margin:0;
+ 	position:absolute;
+ 	bottom:0;
+ 	border-radius:10px 0 0 0;
+ 	color:#FFF;
+ 	}
+ 	
+
+ .forspan {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 20%;
+    z-index: 1;
+}	
+
+span.link_post, span.zoom {
+    background-color: #474747;
+}
+
+span.zoom{
+opacity: 0.6;
+display:inline-block;	
+overflow:hidden;
+width:35px;
+height:35px;
+border-radius:50px;
+cursor:pointer;
+background-image:url(../images/mag.png); background-repeat:no-repeat; background-position:center;
+padding:3px;
+}
+
+span.zoom:hover {
+    opacity: 0.8;
+}
